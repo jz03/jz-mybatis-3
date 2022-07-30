@@ -18,6 +18,9 @@ package org.apache.ibatis.builder;
 /**
  * Interface that indicate to provide a initialization method.
  *
+ * 提供初始化功能
+ * 实际代码中几乎没有用到
+ *
  * @since 3.4.2
  * @author Kazuki Shimizu
  */

@@ -15,5 +15,6 @@
  */
 /**
  * Simple single-thread pooled datasource
+ * 简单的单线程数据库连接池的datasource
  */
 package org.apache.ibatis.datasource.pooled;

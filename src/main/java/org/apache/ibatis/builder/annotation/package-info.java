@@ -15,5 +15,6 @@
  */
 /**
  * Parses annotions to create a Configuration
+ * 对于注解方式的配置进行解析
  */
 package org.apache.ibatis.builder.annotation;

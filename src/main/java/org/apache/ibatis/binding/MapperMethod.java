@@ -43,6 +43,7 @@ import java.util.*;
 public class MapperMethod {
 
   private final SqlCommand command;
+  /*方法签名*/
   private final MethodSignature method;
 
   public MapperMethod(Class<?> mapperInterface, Method method, Configuration config) {

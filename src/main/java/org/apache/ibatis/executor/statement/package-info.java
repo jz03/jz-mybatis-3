@@ -15,5 +15,6 @@
  */
 /**
  * Statement handlers.
+ * SQL执行前需要Statement
  */
 package org.apache.ibatis.executor.statement;

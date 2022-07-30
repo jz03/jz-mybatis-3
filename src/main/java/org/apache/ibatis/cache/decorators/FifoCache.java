@@ -23,6 +23,7 @@ import org.apache.ibatis.cache.Cache;
 
 /**
  * FIFO (first in, first out) cache decorator
+ * 先进先出缓存装饰器
  *
  * @author Clinton Begin
  */

@@ -27,6 +27,11 @@ import java.util.Map;
 import java.util.Set;
 
 /**
+ * mapper注册
+ *
+ * 从配置类Configuration解析出mapper
+ * 并存在成员变量knownMappers中
+ *
  * @author Clinton Begin
  * @author Eduardo Macarron
  * @author Lasse Voss

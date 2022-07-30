@@ -15,5 +15,12 @@
  */
 /**
  * Base package for the Configuration building code
+ *
+ * 解析配置文件信息到Configuration对象中
+ * 1.配置文件有mybatis的整体配置
+ * 2.mapper映射的SQL配置文件（常见的xml形式）
+ * 3.分别有xml方式和注解的模式
+ *
+ * BaseBuilder是基础，都是基于这个类进行扩展的
  */
 package org.apache.ibatis.builder;

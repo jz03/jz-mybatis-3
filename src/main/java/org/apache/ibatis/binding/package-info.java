@@ -15,5 +15,7 @@
  */
 /**
  * Bings mapper interfaces with mapped statements
+ *
+ * 将interfaces定义的方法签名和xml等配置中的SQL进行绑定。
  */
 package org.apache.ibatis.binding;

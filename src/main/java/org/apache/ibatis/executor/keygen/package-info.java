@@ -15,5 +15,6 @@
  */
 /**
  * Contains the key generators
+ * key的生成
  */
 package org.apache.ibatis.executor.keygen;

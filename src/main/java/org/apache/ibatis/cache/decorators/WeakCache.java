@@ -25,6 +25,8 @@ import org.apache.ibatis.cache.Cache;
 
 /**
  * Weak Reference cache decorator.
+ * 弱引用
+ *
  * Thanks to Dr. Heinz Kabutz for his guidance here.
  * 
  * @author Clinton Begin

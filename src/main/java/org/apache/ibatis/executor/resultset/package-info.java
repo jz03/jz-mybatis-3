@@ -15,5 +15,6 @@
  */
 /**
  * Contains the result processing logic
+ * 结果处理逻辑
  */
 package org.apache.ibatis.executor.resultset;

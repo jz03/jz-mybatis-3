@@ -15,5 +15,7 @@
  */
 /**
  * Contains the statement executors.
+ *
+ * SQL语句执行器
  */
 package org.apache.ibatis.executor;

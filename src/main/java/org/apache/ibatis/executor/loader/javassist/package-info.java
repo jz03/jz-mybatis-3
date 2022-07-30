@@ -15,5 +15,8 @@
  */
 /**
  * Javassist proxy factory
+ * Javassist是可以动态编辑Java字节码的类库。
+ * 它可以在Java程序运行时定义一个新的类，并加载到JVM中；
+ * 还可以在JVM加载时修改一个类文件。Javassist使用户不必关心字节码相关的规范也是可以编辑类文件的。
  */
 package org.apache.ibatis.executor.loader.javassist;

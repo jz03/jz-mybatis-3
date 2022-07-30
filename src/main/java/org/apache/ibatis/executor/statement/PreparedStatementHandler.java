@@ -32,6 +32,8 @@ import org.apache.ibatis.session.ResultHandler;
 import org.apache.ibatis.session.RowBounds;
 
 /**
+ * 有占位符的Statemet处理器
+ *
  * @author Clinton Begin
  */
 public class PreparedStatementHandler extends BaseStatementHandler {

@@ -19,8 +19,11 @@ import java.io.Closeable;
 
 /**
  * Cursor contract to handle fetching items lazily using an Iterator.
+ * 处理在迭代器中懒加载处理。
  * Cursors are a perfect fit to handle millions of items queries that would not normally fits in memory.
+ * 游标非常适合处理通常不适合内存的数百万个项目查询。
  * Cursor SQL queries must be ordered (resultOrdered="true") using the id columns of the resultMap.
+ * 游标 SQL 查询必须使用 resultMap 的 id 列进行排序（resultOrdered=“true”）。
  *
  * @author Guillaume Darmont / guillaume@dropinocean.com
  */

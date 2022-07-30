@@ -18,6 +18,9 @@ package org.apache.ibatis.executor.resultset;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * 基本类型
+ */
 public class PrimitiveTypes {
   private final Map<Class<?>, Class<?>> primitiveToWrappers;
   private final Map<Class<?>, Class<?>> wrappersToPrimitives;

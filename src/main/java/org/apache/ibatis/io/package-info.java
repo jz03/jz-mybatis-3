@@ -15,5 +15,6 @@
  */
 /**
  * Utilities to read resources.
+ * 读取配置文件工具类
  */
 package org.apache.ibatis.io;

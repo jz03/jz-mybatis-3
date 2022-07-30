@@ -15,5 +15,8 @@
  */
 /**
  * JNDI Datasource factory
+ *
+ * JNDI是 Java 命名与目录接口（Java Naming and Directory Interface），
+ * 在J2EE规范中是重要的规范之一
  */
 package org.apache.ibatis.datasource.jndi;

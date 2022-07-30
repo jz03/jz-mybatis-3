@@ -32,6 +32,8 @@ import java.util.Collections;
 import java.util.List;
 
 /**
+ * 简单执行器（常用）
+ *
  * @author Clinton Begin
  */
 public class SimpleExecutor extends BaseExecutor {

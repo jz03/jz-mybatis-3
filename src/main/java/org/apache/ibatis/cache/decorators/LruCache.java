@@ -23,6 +23,7 @@ import org.apache.ibatis.cache.Cache;
 
 /**
  * Lru (least recently used) cache decorator
+ * 最近最少使用
  *
  * @author Clinton Begin
  */

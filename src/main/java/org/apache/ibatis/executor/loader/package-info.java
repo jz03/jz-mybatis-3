@@ -15,5 +15,6 @@
  */
 /**
  * Base package for loading results into beans
+ * 将结果导入到bean中
  */
 package org.apache.ibatis.executor.loader;
