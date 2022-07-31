@@ -20,6 +20,7 @@ import java.util.Arrays;
 
 /**
  * Provides hashCode, equals and toString methods that can handle array.
+ * 为数组对象提供hashCode、equals 、 toString 方法
  */
 public class ArrayUtil {
 

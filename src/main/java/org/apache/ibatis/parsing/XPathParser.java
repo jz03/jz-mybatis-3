@@ -40,6 +40,7 @@ import org.xml.sax.SAXException;
 import org.xml.sax.SAXParseException;
 
 /**
+ * 根据xml的节点进行解析
  * @author Clinton Begin
  */
 public class XPathParser {

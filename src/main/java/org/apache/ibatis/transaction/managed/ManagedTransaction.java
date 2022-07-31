@@ -26,9 +26,11 @@ import org.apache.ibatis.transaction.Transaction;
 
 /**
  * {@link Transaction} that lets the container manage the full lifecycle of the transaction.
+ * 这使容器能够管理事务的整个生命周期
  * Delays connection retrieval until getConnection() is called.
  * Ignores all commit or rollback requests.
  * By default, it closes the connection but can be configured not to do it.
+ * 默认情况下，它关闭连接，但可以配置为不关闭。
  *
  * @author Clinton Begin
  *

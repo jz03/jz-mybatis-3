@@ -34,6 +34,7 @@ import org.apache.ibatis.reflection.ParamNameUtil;
 import org.apache.ibatis.session.Configuration;
 
 /**
+ * 结果映射
  * @author Clinton Begin
  */
 public class ResultMap {
@@ -48,7 +49,9 @@ public class ResultMap {
   private Set<String> mappedColumns;
   private Set<String> mappedProperties;
   private Discriminator discriminator;
+  /*有嵌套的结果map*/
   private boolean hasNestedResultMaps;
+  /*有嵌套的查询*/
   private boolean hasNestedQueries;
   private Boolean autoMapping;
 

@@ -27,6 +27,8 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
 /**
+ * xml配置文件的节点
+ *
  * @author Clinton Begin
  */
 public class XNode {

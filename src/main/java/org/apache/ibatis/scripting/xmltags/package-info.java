@@ -15,5 +15,6 @@
  */
 /**
  * Default XML MyBatis language.
+ * 动态SQL的xml配置（if、foreach）
  */
 package org.apache.ibatis.scripting.xmltags;

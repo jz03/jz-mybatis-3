@@ -16,6 +16,8 @@
 package org.apache.ibatis.mapping;
 
 /**
+ * Statement的类型
+ * 普通、预编译、存储过程
  * @author Clinton Begin
  */
 public enum StatementType {

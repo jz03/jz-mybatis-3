@@ -21,6 +21,8 @@ import java.util.Properties;
 import javax.sql.DataSource;
 
 /**
+ * 对于不同的数据库供应商提供不同的id标识
+ *
  * Should return an id to identify the type of this database.
  * That id can be used later on to build different queries for each database type
  * This mechanism enables supporting multiple vendors or versions

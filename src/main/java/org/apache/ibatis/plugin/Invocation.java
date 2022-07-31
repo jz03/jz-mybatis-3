@@ -19,6 +19,7 @@ import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
 /**
+ * 调用
  * @author Clinton Begin
  */
 public class Invocation {
@@ -45,6 +46,12 @@ public class Invocation {
     return args;
   }
 
+  /**
+   * 执行对象的方法
+   * @return
+   * @throws InvocationTargetException
+   * @throws IllegalAccessException
+   */
   public Object proceed() throws InvocationTargetException, IllegalAccessException {
     return method.invoke(target, args);
   }

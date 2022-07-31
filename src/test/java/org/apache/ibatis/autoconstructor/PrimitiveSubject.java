@@ -15,11 +15,16 @@
  */
 package org.apache.ibatis.autoconstructor;
 
+/**
+ * 原始主题
+ */
 public class PrimitiveSubject {
   private final int id;
   private final String name;
   private final int age;
+  //身高
   private final int height;
+  //体重
   private final int weight;
 
   public PrimitiveSubject(final int id, final String name, final int age, final int height, final int weight) {

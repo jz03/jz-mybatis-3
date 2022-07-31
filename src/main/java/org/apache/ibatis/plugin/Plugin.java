@@ -26,6 +26,7 @@ import java.util.Set;
 import org.apache.ibatis.reflection.ExceptionUtil;
 
 /**
+ * 插件的动态代理处理类
  * @author Clinton Begin
  */
 public class Plugin implements InvocationHandler {

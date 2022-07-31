@@ -17,6 +17,9 @@ package org.apache.ibatis.autoconstructor;
 
 import org.apache.ibatis.annotations.AutomapConstructor;
 
+/**
+ * 有注解的主题
+ */
 public class AnnotatedSubject {
   private final int id;
   private final String name;

@@ -16,6 +16,9 @@
 package org.apache.ibatis.mapping;
 
 /**
+ * 获取类型
+ * 懒加载、紧急加载、默认
+ *
  * @author Eduardo Macarron
  */
 public enum FetchType {

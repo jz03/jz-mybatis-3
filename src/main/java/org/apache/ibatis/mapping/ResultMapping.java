@@ -36,7 +36,9 @@ public class ResultMapping {
   private Class<?> javaType;
   private JdbcType jdbcType;
   private TypeHandler<?> typeHandler;
+  /*嵌套结果map的id*/
   private String nestedResultMapId;
+  /*嵌套查询id*/
   private String nestedQueryId;
   private Set<String> notNullColumns;
   private String columnPrefix;

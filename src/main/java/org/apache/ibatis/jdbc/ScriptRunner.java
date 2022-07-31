@@ -28,6 +28,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
+ * 执行SQL脚本
  * @author Clinton Begin
  */
 public class ScriptRunner {

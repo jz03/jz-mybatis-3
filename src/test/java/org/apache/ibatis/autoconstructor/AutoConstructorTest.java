@@ -41,6 +41,7 @@ public class AutoConstructorTest {
     reader.close();
 
     // populate in-memory database
+    //填充内存数据库
     final SqlSession session = sqlSessionFactory.openSession();
     final Connection conn = session.getConnection();
     final Reader dbReader = Resources.getResourceAsReader("org/apache/ibatis/autoconstructor/CreateDB.sql");
