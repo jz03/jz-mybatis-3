@@ -59,14 +59,18 @@ import org.junit.BeforeClass;
 import org.junit.Ignore;
 import org.junit.Test;
 
+/**
+ * 测试SQL使用的45个情况
+ */
 public class BindingTest {
   private static SqlSessionFactory sqlSessionFactory;
 
   @BeforeClass
   public static void setup() throws Exception {
     DataSource dataSource = BaseDataTest.createBlogDataSource();
-    BaseDataTest.runScript(dataSource, BaseDataTest.BLOG_DDL);
-    BaseDataTest.runScript(dataSource, BaseDataTest.BLOG_DATA);
+    //下边两行应该是重复了，在基础数据中已经跑过了一遍脚本
+//    BaseDataTest.runScript(dataSource, BaseDataTest.BLOG_DDL);
+//    BaseDataTest.runScript(dataSource, BaseDataTest.BLOG_DATA);
     TransactionFactory transactionFactory = new JdbcTransactionFactory();
     Environment environment = new Environment("Production", transactionFactory, dataSource);
     Configuration configuration = new Configuration(environment);
@@ -80,6 +84,10 @@ public class BindingTest {
     sqlSessionFactory = new SqlSessionFactoryBuilder().build(configuration);
   }
 
+  /**
+   * 查询结果的子查询
+   * @throws Exception
+   */
   @Test
   public void shouldSelectBlogWithPostsUsingSubSelect() throws Exception {
     SqlSession session = sqlSessionFactory.openSession();
@@ -98,6 +106,10 @@ public class BindingTest {
     }
   }
 
+  /**
+   * 入参为list
+   * @throws Exception
+   */
   @Test
   public void shouldFindPostsInList() throws Exception {
     SqlSession session = sqlSessionFactory.openSession();
@@ -115,6 +127,10 @@ public class BindingTest {
     }
   }
 
+  /**
+   * 入参为数组
+   * @throws Exception
+   */
   @Test
   public void shouldFindPostsInArray() throws Exception {
     SqlSession session = sqlSessionFactory.openSession();
@@ -129,6 +145,10 @@ public class BindingTest {
     }
   }
 
+  /**
+   * 三个入参
+   * @throws Exception
+   */
   @Test
   public void shouldfindThreeSpecificPosts() throws Exception {
     SqlSession session = sqlSessionFactory.openSession();
@@ -143,6 +163,9 @@ public class BindingTest {
     }
   }
 
+  /**
+   * 插入数据（生成key）
+   */
   @Test
   public void shouldInsertAuthorWithSelectKey() {
     SqlSession session = sqlSessionFactory.openSession();

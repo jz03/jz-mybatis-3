@@ -24,6 +24,9 @@ import org.apache.ibatis.domain.blog.Section;
 import org.apache.ibatis.scripting.xmltags.ExpressionEvaluator;
 import org.junit.Test;
 
+/**
+ * 表达式计算器
+ */
 public class ExpressionEvaluatorTest {
 
   private ExpressionEvaluator evaluator = new ExpressionEvaluator();

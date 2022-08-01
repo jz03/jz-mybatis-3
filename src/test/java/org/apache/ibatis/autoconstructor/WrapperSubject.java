@@ -16,7 +16,7 @@
 package org.apache.ibatis.autoconstructor;
 
 /**
- * 包装主题
+ * 包装方式
  */
 public class WrapperSubject {
   private final int id;

@@ -31,6 +31,7 @@
             </transactionManager>
             <dataSource type="UNPOOLED">
                 <property name="driver" value="org.hsqldb.jdbcDriver"/>
+<!--                表示启动的是内存模式，程序结束就会清零-->
                 <property name="url" value="jdbc:hsqldb:mem:automapping"/>
                 <property name="username" value="sa"/>
             </dataSource>

@@ -27,6 +27,9 @@ import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.Properties;
 
+/**
+ * 测试使用的基础数据
+ */
 public abstract class BaseDataTest {
 
   public static final String BLOG_PROPERTIES = "org/apache/ibatis/databases/blog/blog-derby.properties";
@@ -80,6 +83,12 @@ public abstract class BaseDataTest {
     }
   }
 
+  /**
+   * 创建博客数据源
+   * @return
+   * @throws IOException
+   * @throws SQLException
+   */
   public static DataSource createBlogDataSource() throws IOException, SQLException {
     DataSource ds = createUnpooledDataSource(BLOG_PROPERTIES);
     runScript(ds, BLOG_DDL);

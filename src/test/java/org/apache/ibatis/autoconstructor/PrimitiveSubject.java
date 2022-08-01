@@ -16,7 +16,7 @@
 package org.apache.ibatis.autoconstructor;
 
 /**
- * 原始主题
+ * 原始方式
  */
 public class PrimitiveSubject {
   private final int id;

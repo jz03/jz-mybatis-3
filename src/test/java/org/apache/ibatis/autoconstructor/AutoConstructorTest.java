@@ -33,6 +33,10 @@ import java.util.List;
 public class AutoConstructorTest {
   private static SqlSessionFactory sqlSessionFactory;
 
+  /**
+   * BeforeClass 表示只执行一次
+   * @throws Exception
+   */
   @BeforeClass
   public static void setUp() throws Exception {
     // create a SqlSessionFactory
@@ -41,7 +45,7 @@ public class AutoConstructorTest {
     reader.close();
 
     // populate in-memory database
-    //填充内存数据库
+    //向数据库中填充必要的数据
     final SqlSession session = sqlSessionFactory.openSession();
     final Connection conn = session.getConnection();
     final Reader dbReader = Resources.getResourceAsReader("org/apache/ibatis/autoconstructor/CreateDB.sql");
@@ -53,6 +57,9 @@ public class AutoConstructorTest {
     session.close();
   }
 
+  /**
+   * 每个字段的数据全部存在时
+   */
   @Test
   public void fullyPopulatedSubject() {
     final SqlSession sqlSession = sqlSessionFactory.openSession();
@@ -65,6 +72,9 @@ public class AutoConstructorTest {
     }
   }
 
+  /**
+   * 当部分字段没有数据时
+   */
   @Test(expected = PersistenceException.class)
   public void primitiveSubjects() {
     final SqlSession sqlSession = sqlSessionFactory.openSession();
@@ -76,6 +86,9 @@ public class AutoConstructorTest {
     }
   }
 
+  /**
+   * 包装判断是否是空
+   */
   @Test
   public void wrapperSubject() {
     final SqlSession sqlSession = sqlSessionFactory.openSession();
@@ -87,6 +100,10 @@ public class AutoConstructorTest {
     }
   }
 
+  /**
+   * 自动选取添加注解的构造器
+   * 如果哦使用没有添加注解的构造器，将会出现错误
+   */
   @Test
   public void annotatedSubject() {
     final SqlSession sqlSession = sqlSessionFactory.openSession();
@@ -98,6 +115,9 @@ public class AutoConstructorTest {
     }
   }
 
+  /**
+   * 因为有一个类型Height是自定义的，所以匹配不到
+   */
   @Test(expected = PersistenceException.class)
   public void badSubject() {
     final SqlSession sqlSession = sqlSessionFactory.openSession();

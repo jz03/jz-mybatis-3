@@ -16,7 +16,7 @@
 package org.apache.ibatis.autoconstructor;
 
 /**
- * 坏主题
+ * 错误的方式
  */
 public class BadSubject {
   private final int id;
